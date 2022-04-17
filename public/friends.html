@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Realtime Chat App | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="wrapper">
+      <section class="users">
+        <header>
+          <div class="content">
+            <img src="php/images/user.png" alt="">
+            <div class="details">
+              <span id="user_name"></span>
+              <p>Active Now</p>
+            </div>
+          </div>
+          <a  class="logout">Logout</a>
+        </header>
+        <div class="search">
+          <span class="text">Select an user to start chat</span>
+          <input type="text" placeholder="Enter name to search...">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <!-- ============================   Group List ============================= -->
+        <!-- <div class="group-list">
+          <a href="chat.html">
+              <div class="content">
+              <img src="php/images/user.png" alt="">
+              <div class="details">
+                  <span>Great Mathematicians</span>
+                  <p>You: Hello favour</p>
+              </div>
+              </div>
+              
+          </a>
+          <a href="chat.html">
+              <div class="content">
+              <img src="php/images/user.png" alt="">
+              <div class="details">
+                  <span>Imo NYSC</span>
+                  <p>You: How far</p>
+              </div>
+              </div>
+              
+          </a>
+      </div> -->
+      <!-- ============================   Group List ============================= -->
+
+
+      <!-- ============================   Users List ============================= -->
+        <div class="users-list">
+            <!-- <a href="chat.html">
+                <div class="content">
+                <img src="php/images/1638082044image1.jpg" alt="">
+                <div class="details">
+                    <span>Favour Oyasor</span>
+                    <p>You: Hello favour</p>
+                </div>
+                </div>
+                <div class="status-dot offline"><i class="fas fa-circle"></i></div>
+            </a>
+            <a href="chat.html">
+                <div class="content">
+                <img src="php/images/1638082044image1.jpg" alt="">
+                <div class="details">
+                    <span>Binawei Amune</span>
+                    <p>You: How far</p>
+                </div>
+                </div>
+                <div class="status-dot"><i class="fas fa-circle"></i></div>
+            </a> -->
+        </div>
+      </section>
+    </div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js" integrity="sha512-Idr7xVNnMWCsgBQscTSCivBNWWH30oo/tzYORviOCrLKmBaRxRflm2miNhTFJNVmXvCtzgms5nlJF4az2hiGnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="javascript/users.js"></script>
+  
+  </body>
+  </html>
